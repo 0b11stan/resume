@@ -126,20 +126,36 @@
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
 \begin{paracol}{2}
-\cvsection{Experience}
+\cvsection{Experiences}
 
-\cvevent{Job Title 1}{Company 1}{Month 20XX -- Ongoing}{Location}
+\cvevent{Consultant cybersécurité}{Capgemini}{Octobre 2021 -- Ongoing}{Pessac, Bordeaux}
 \begin{itemize}
-\item Job description 1
-\item Job description 2
+\item Audit d'une solution WAF pour une certification CSPN
+\item Tests d'intrusion externes et interne
 \end{itemize}
 
 \divider
 
-\cvevent{Job Title 2}{Company 2}{Month 20XX -- Ongoing}{Location}
+  \cvevent{Ingénieur SRE}{Cdiscount}{Sept. 2018 -- Sept. 2021}{Bordeaux (Baccalan)}
 \begin{itemize}
-\item Job description 1
-\item Job description 2
+\item Intégration d'une solution de coffre-fort numérique résiliente
+\item Intégration d'une solution d'observabilité résiliente
+\item Maintenance de plateformes de messaging et d'infrastructure
+\end{itemize}
+
+\divider
+
+\cvevent{HelloAsso}{Développeur DevOps}{Sept. 2017 -- Sept. 2018}{Bordeaux (Darwin)}
+\begin{itemize}
+  \item Développement d'un système d'analyse de la conformité
+  \item Maintenance et support N+1 environnement .NET et Azure
+\end{itemize}
+
+\divider
+
+\cvevent{Développeur Full Stack}{Touton SA}{Mai 2016 -- Juillet 2017}{Bordeaux (Baccalan)}
+\begin{itemize}
+  \item Passage d'une application legacy (Access) en web
 \end{itemize}
 
 \cvsection{Projects}
@@ -169,45 +185,9 @@ A short abstract would also work.
   5/6em/accent!20/Spending time with family
 }
 
-% use ONLY \newpage if you want to force a page break for
-% ONLY the current column
-\newpage
-
-\cvsection{Publications}
-
-\nocite{*}
-
-\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}},type=article]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
-
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
 \switchcolumn
-
-\cvsection{My Life Philosophy}
-
-\begin{quote}
-``Something smart or heartfelt, preferably in one sentence.''
-\end{quote}
-
-\cvsection{Most Proud of}
-
-\cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}
-
-\divider
-
-\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
-
-\divider
-
-\cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
 
 \cvsection{Strengths}
 
@@ -223,13 +203,11 @@ A short abstract would also work.
 
 \cvsection{Languages}
 
-\cvskill{English}{5}
+\cvskill{French}{5}
 \divider
 
-\cvskill{Spanish}{4}
+\cvskill{English}{4}
 \divider
-
-\cvskill{German}{3.5} %% Supports X.5 values.
 
 %% Yeah I didn't spend too much time making all the
 %% spacing consistent... sorry. Use \smallskip, \medskip,
@@ -250,18 +228,6 @@ Thesis title: Wonderful Research
 \cvevent{B.Sc.\ in Your Discipline}{Stanford University}{Sept 1998 -- June 2001}{}
 
 % \divider
-
-\cvsection{Referees}
-
-% \cvref{name}{email}{mailing address}
-\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-{Address Line 1\\Address line 2}
-
-\divider
-
-\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
-{Address Line 1\\Address line 2}
-
 
 \end{paracol}
 
