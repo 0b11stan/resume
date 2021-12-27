@@ -19,10 +19,11 @@
 %% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
 
 % Change the page layout if you need to
-\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\geometry{left=1.25cm,right=1.25cm,top=1.25cm,bottom=1.25cm,columnsep=1.2cm}
 
 % The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
+\usepackage{fancybox}
 
 % Change the font if you want to, depending on whether
 % you're using pdflatex or xelatex/lualatex
@@ -42,9 +43,9 @@
 % Change the colours if you want to
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-\definecolor{DarkPastelRed}{HTML}{450808}
-\definecolor{PastelRed}{HTML}{8F0D0D}
-\definecolor{GoldenEarth}{HTML}{E7D192}
+\definecolor{DarkPastelRed}{HTML}{2c2f33}
+\definecolor{PastelRed}{HTML}{7289da}
+\definecolor{GoldenEarth}{HTML}{99aab5}
 \colorlet{name}{black}
 \colorlet{tagline}{PastelRed}
 \colorlet{heading}{DarkPastelRed}
@@ -81,9 +82,9 @@
 
 \begin{document}
 \name{Tristan Pinaudeau}
-\tagline{Consultant en sécurité offensive ethique}
+\tagline{Consultant en sécurité offensive éthique}
 %% You can add multiple photos on the left or right
-\photoR{2.8cm}{Globe_High}
+\photoR{2.8cm}{face}
 % \photoL{2.5cm}{Yacht_High,Suitcase_High}
 
 \personalinfo{%
@@ -126,12 +127,12 @@
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
 \begin{paracol}{2}
-\cvsection{Experiences}
+\cvsection{Expériences}
 
-\cvevent{Consultant cybersécurité}{Capgemini}{Octobre 2021 -- Ongoing}{Pessac, Bordeaux}
+\cvevent{Consultant cybersécurité}{Capgemini}{Octobre 2021 -- Aujourd'hui}{Pessac, Bordeaux}
 \begin{itemize}
 \item Audit d'une solution WAF pour une certification CSPN
-\item Tests d'intrusion externes et interne
+\item Tests d'intrusion externe et interne
 \end{itemize}
 
 \divider
@@ -145,7 +146,7 @@
 
 \divider
 
-\cvevent{HelloAsso}{Développeur DevOps}{Sept. 2017 -- Sept. 2018}{Bordeaux (Darwin)}
+\cvevent{Développeur DevOps}{HelloAsso}{Sept. 2017 -- Sept. 2018}{Bordeaux (Darwin)}
 \begin{itemize}
   \item Développement d'un système d'analyse de la conformité
   \item Maintenance et support N+1 environnement .NET et Azure
@@ -158,74 +159,93 @@
   \item Passage d'une application legacy (Access) en ASP .NET
 \end{itemize}
 
-\cvsection{Projects}
+\cvsection{Activités}
 
-\cvevent{Project 1}{Funding agency/institution}{}{}
-\begin{itemize}
-\item Details
-\end{itemize}
+  \cvevent{}{Hackathons / CTFs}{}{}
+  \begin{itemize}
+    \item THC CTF (57/374) -- 2021: binaire, crypto, web, android (\href{https://blog.tic.sh/thc-2021-mission-impossible/}{\color{PastelRed}writeup})
+    \item Google Code Jam (Qualif + Round1) -- 2021: maths, algo
+    \item Sunshine CTF (72/750) -- 2020: binaire, web
+    \item Square CTF (127/610) -- 2020: binaire, crypto, web
+    \item StartupWeekendBdx (2/40) -- 2019: gestion, marketing, finance
+    \item Sthack Conf \& CTF -- 2019: binaire, IA, web, network
+    \item HackBordeaux (1\textsuperscript{er} au défi Ekino) -- 2019: Android, BLE
+    \item HackBordeaux (1\textsuperscript{er} au défi Lectra) -- 2018: Graphql, React
+  \end{itemize}
 
-\divider
-
-\cvevent{Project 2}{Funding agency/institution}{Project duration}{}
-A short abstract would also work.
+  \cvevent{}{Projets}{}{}
+  \begin{itemize}
+    \item Martine (WIP): Site de partage de photos
+      \begin{itemize}
+        \item[>] Python (Flask) -- Go -- VueJs -- Docker -- Ansible
+      \end{itemize}
+    \item AKO (2019): Application innovante de partage de compétences.
+      \begin{itemize}
+        \item[>] Python -- Graphql -- Hasura -- React
+      \end{itemize}
+    \item Heimdal (2018): Développement d'un service HIDS déporté.
+      \begin{itemize}
+        \item[>] Python -- Bash -- Docker
+      \end{itemize}
+  \end{itemize}
 
 \medskip
-
-\cvsection{A Day of My Life}
-
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-\wheelchart{1.5cm}{0.5cm}{%
-  6/8em/accent!30/{Sleep,\\beautiful sleep},
-  3/8em/accent!40/Hopeful novelist by night,
-  8/8em/accent!60/Daytime job,
-  2/10em/accent/Sports and relaxation,
-  5/6em/accent!20/Spending time with family
-}
 
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
 \switchcolumn
 
-\cvsection{Strengths}
+\cvsection{Forces}
 
-\cvtag{Hard-working}
-\cvtag{Eye for detail}\\
-\cvtag{Motivator \& Leader}
+  \cvtag{GNU/Linux}
+  \cvtag{Python}
+  \cvtag{Docker / Podman}
+  \cvtag{Ansible}
+  \cvtag{Qemu/KVM}
+  \cvtag{Tests Auto}
+  \cvtag{Tests d'intrusion}
 
-\divider\smallskip
+  \divider\smallskip
 
-\cvtag{C++}
-\cvtag{Embedded Systems}\\
-\cvtag{Statistical Analysis}
+  \cvtag{Passionné}
+  \cvtag{Pédagogue}
+  \cvtag{Curieux}
 
-\cvsection{Languages}
+\cvsection{Langues}
 
-\cvskill{French}{5}
-\divider
+  \cvskill{Français}{5}
+  \divider
 
-\cvskill{English}{4}
-\divider
+  \cvskill{Anglais (TOEIC 960/990)}{4}
+  \divider
 
 %% Yeah I didn't spend too much time making all the
 %% spacing consistent... sorry. Use \smallskip, \medskip,
 %% \bigskip, \vspace etc to make adjustments.
 \medskip
 
-\cvsection{Education}
+\cvsection{Formations}
 
-\cvevent{Master Spécialisé Sécurité Informatique}{ENSEEIHT}{Sept. 2020 -- Sept. 2021}{}
-Thesis title: Wonderful Research
+  \cvevent{Master Spécialisé en Sécurité Informatique}{ENSEEIHT}{Sept. 2020 -- Sept. 2021}{}
+  Une formation de haut niveau très technique, résultat d'une collaboration entre
+  l'INSA, l'ENAC et l'ENSEEIHT. (c.f. \href{https://tls-sec.github.io/documents/Syllabus_Ms_securite_Informatique_V1.pdf}{syllabus})
 
-\divider
+  \divider
 
-\cvevent{M.Sc.\ in Your Discipline}{Your University}{Sept 2001 -- June 2002}{}
+  \cvevent{Titre RNCP de niveau 1}{EPSI Bordeaux}{Sept 2018 -- Sept 2020}{}
+  Obtenu à la fin d'un cycle d'ingénierie en informatique généraliste (spécialité
+  cybersécurité) réalisé en alternance à Cdiscount.
 
-\divider
+  \divider
 
-\cvevent{B.Sc.\ in Your Discipline}{Stanford University}{Sept 1998 -- June 2001}{}
+  \cvevent{Titre RNCP de niveau 2}{EPSI Bordeaux}{Sept 2017 -- Sept 2018}{}
+  Obtenu à la fin d'un cycle bachelor en informatique généraliste réalisé en
+  alternance.
+  (Major de Promotion)
+
+  \divider
+
+  \cvevent{BTS SIO SLAM}{EPSI Bordeaux}{Sept 2015 -- Sept 2017}{}
 
 % \divider
 
