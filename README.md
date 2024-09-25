@@ -4,7 +4,7 @@ Based on [AltaCV](https://github.com/liantze/AltaCV).
 
 Requirements on Archlinux:
 
-* `texlive-most`
+* `texlive-latex`
 * `texlive-bibtexextra`
 * `biber`
 
