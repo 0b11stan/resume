@@ -1,0 +1,222 @@
+\RequirePackage{snapshot}
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+\geometry{left=1.25cm,right=1.25cm,top=1.25cm,bottom=1.25cm,columnsep=1.2cm}
+\usepackage{paracol}
+\usepackage{fancybox}
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+% \usepackage{sourcesanspro}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{2c2f33}
+\definecolor{PastelRed}{HTML}{7289da}
+\definecolor{GoldenEarth}{HTML}{99aab5}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Use (and optionally edit if necessary) this .cfg if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+\input{pubs-authoryear.cfg}
+
+%% Use (and optionally edit if necessary) this .cfg if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+% \input{pubs-num.cfg}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Tristan Pinaudeau}
+\tagline{Consultant en sécurité offensive éthique}
+%% You can add multiple photos on the left or right
+\photoR{2.8cm}{face}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{tristan@tic.sh}
+  \phone{+33 6 81 67 53 37}
+  \mailaddress{164 rue d'Ornano, 33000 Bordeaux, France}
+  \homepage{blog.tic.sh}
+  \twitter{@0b11stan}
+  \linkedin{tristan-pinaudeau}
+  \github{0b11stan}
+  %\orcid{0000-0000-0000-0000}
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+  %%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+\cvsection{Expériences}
+
+\cvevent{Consultant cybersécurité}{Capgemini}{Octobre 2021 -- Aujourd'hui}{Pessac, Bordeaux}
+\begin{itemize}
+\item Audit d'une solution WAF pour une certification CSPN
+\item Tests d'intrusion externe et interne
+\end{itemize}
+
+\divider
+
+\cvevent{Ingénieur SRE}{Cdiscount}{Sept. 2018 -- Sept. 2021}{Bordeaux (Baccalan)}
+\begin{itemize}
+\item Intégration d'une solution de coffre-fort numérique résiliente
+\item Intégration d'une solution d'observabilité résiliente
+\item Maintenance de plateformes de messaging et d'infrastructure
+\end{itemize}
+
+\divider
+
+\cvevent{Développeur DevOps}{HelloAsso}{Sept. 2017 -- Sept. 2018}{Bordeaux (Darwin)}
+\begin{itemize}
+  \item Développement d'un système d'analyse de la conformité
+  \item Maintenance et support N+1 environnement .NET et Azure
+\end{itemize}
+
+\divider
+
+\cvevent{Développeur Full Stack}{Touton SA}{Mai 2016 -- Juillet 2017}{Bordeaux (Baccalan)}
+\begin{itemize}
+  \item Passage d'une application legacy (Access) en ASP .NET
+\end{itemize}
+
+\cvsection{Activités}
+
+  \cvevent{}{Hackathons / CTFs}{}{}
+  \begin{itemize}
+    \item THC CTF (57/374) -- 2021: binaire, crypto, web, android (\href{https://blog.tic.sh/2021/06/29/thc-writeup-mission-impossible-fr.html}{\color{PastelRed}writeup})
+    \item Google Code Jam (Qualif + Round1) -- 2021: maths, algo
+    \item Sunshine CTF (72/750) -- 2020: binaire, web
+    \item Square CTF (127/610) -- 2020: binaire, crypto, web
+    \item StartupWeekendBdx (2/40) -- 2019: gestion, marketing, finance
+    \item Sthack Conf \& CTF -- 2019: binaire, IA, web, network
+    \item HackBordeaux (1\textsuperscript{er} au défi Ekino) -- 2019: Android, BLE
+    \item HackBordeaux (1\textsuperscript{er} au défi Lectra) -- 2018: Graphql, React
+  \end{itemize}
+
+  \cvevent{}{Projets}{}{}
+  \begin{itemize}
+    \item Martine (WIP): Site de partage de photos
+      \begin{itemize}
+        \item[>] Python (Flask) -- Go -- VueJs -- Docker -- Ansible
+      \end{itemize}
+    \item AKO (2019): Application innovante de partage de compétences.
+      \begin{itemize}
+        \item[>] Python -- Graphql -- Hasura -- React
+      \end{itemize}
+    \item Heimdal (2018): Développement d'un service HIDS déporté.
+      \begin{itemize}
+        \item[>] Python -- Bash -- Docker
+      \end{itemize}
+  \end{itemize}
+
+\medskip
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Forces}
+
+  \cvtag{GNU/Linux}
+  \cvtag{Python}
+  \cvtag{Docker / Podman}
+  \cvtag{Ansible}
+  \cvtag{Qemu/KVM}
+  \cvtag{RedHat}
+  \cvtag{Tests d'intrusion}
+
+  \divider\smallskip
+
+  \cvtag{Passionné}
+  \cvtag{Pédagogue}
+  \cvtag{Curieux}
+
+\cvsection{Langues}
+
+  \cvskill{Français}{5}
+  \divider
+
+  \cvskill{Anglais (TOEIC 960/990)}{4}
+  \divider
+
+%% Yeah I didn't spend too much time making all the
+%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% \bigskip, \vspace etc to make adjustments.
+\medskip
+
+\cvsection{Formations}
+
+  \cvevent{Master Spécialisé en Sécurité Informatique}{ENSEEIHT}{Sept. 2020 -- Sept. 2021}{}
+  Une formation de haut niveau très technique, résultat d'une collaboration entre
+  l'INSA, l'ENAC et l'ENSEEIHT. (c.f. \href{https://tls-sec.github.io/documents/Syllabus_Ms_securite_Informatique_V1.pdf}{syllabus})
+
+  \divider
+
+  \cvevent{Titre RNCP de niveau 1}{EPSI Bordeaux}{Sept 2018 -- Sept 2020}{}
+  Obtenu à la fin d'un cycle d'ingénierie en informatique généraliste (spécialité
+  cybersécurité) réalisé en alternance à Cdiscount.
+
+  \divider
+
+  \cvevent{Titre RNCP de niveau 2}{EPSI Bordeaux}{Sept 2017 -- Sept 2018}{}
+  Obtenu à la fin d'un cycle bachelor en informatique généraliste réalisé en
+  alternance.
+  (Major de Promotion)
+
+  \divider
+
+  \cvevent{BTS SIO SLAM}{EPSI Bordeaux}{Sept 2015 -- Sept 2017}{}
+
+% \divider
+
+\end{paracol}
+
+
+\end{document}

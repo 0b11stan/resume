@@ -1,0 +1,159 @@
+\RequireVersions{
+  *{application}{pdfTeX}  {0000/00/00 v1.40.25}
+  *{format} {LaTeX2e}     {2023-11-01 v2.e}
+  *{package}{snapshot}    {2020/06/17 v2.14}
+  *{class}  {altacv}      {2021/10/04 v1.6.4,}
+  *{class}  {extarticle}  {1996/10/08 v1.0}
+  *{file}   {size10.clo}  {2023/05/17 v1.4n}
+  *{package}{exscale}     {2018/09/24 v2.1i}
+  *{package}{etoolbox}    {2020/10/05 v2.5k}
+  *{package}{pdfx}        {2019/02/27 v1.6.3}
+  *{package}{iftex}       {2022/02/03 v1.0f}
+  *{package}{ifpdf}       {2019/10/25 v3.4}
+  *{package}{ifxetex}     {2019/10/25 v0.7}
+  *{package}{everyshi}    {2020/11/18 v4.00}
+  *{package}{ifluatex}    {2019/10/25 v1.5}
+  *{package}{inputenc}    {2021/02/14 v1.3d}
+  *{file}   {l8u-penc.def}{2017/06/23 v0.8}
+  *{package}{xcolor}      {2023/11/15 v3.01}
+  *{file}   {color.cfg}   {2016/01/02 v1.6}
+  *{file}   {pdftex.def}  {2022/09/22 v1.2b}
+  *{file}   {mathcolor.ltx}{0000/00/00 v0.0}
+  *{package}{hyperref}    {2024-01-20 v7.01h}
+  *{package}{keyval}      {2022/05/29 v1.15}
+  *{package}{kvsetkeys}   {2022-10-05 v1.19}
+  *{package}{kvdefinekeys}{2019-12-19 v1.6}
+  *{package}{pdfescape}   {2019/12/09 v1.15}
+  *{package}{ltxcmds}     {2023-12-04 v1.26}
+  *{package}{pdftexcmds}  {2020-06-27 v0.33}
+  *{package}{infwarerr}   {2019/12/03 v1.5}
+  *{package}{hycolor}     {2020-01-27 v1.10}
+  *{package}{auxhook}     {2019-12-17 v1.6}
+  *{package}{nameref}     {2023-11-26 v2.56}
+  *{package}{refcount}    {2019/12/15 v3.6}
+  *{package}{gettitlestring}{2019/12/15 v1.6}
+  *{package}{kvoptions}   {2022-06-15 v3.15}
+  *{file}   {pd1enc.def}  {2024-01-20 v7.01h}
+  *{package}{intcalc}     {2019/12/15 v1.3}
+  *{file}   {puenc.def}   {2024-01-20 v7.01h}
+  *{package}{url}         {2013/09/16 v3.4}
+  *{package}{bitset}      {2019/12/09 v1.3}
+  *{package}{bigintcalc}  {2019/12/15 v1.5}
+  *{package}{atbegshi-ltx}{2021/01/10 v1.0c}
+  *{file}   {hpdftex.def} {2024-01-20 v7.01h}
+  *{package}{atveryend-ltx}{2020/08/19 v1.0a}
+  *{package}{rerunfilecheck}{2022-07-10 v1.10}
+  *{package}{uniquecounter}{2019/12/15 v1.4}
+  *{package}{stringenc}   {2019/11/29 v1.12}
+  *{file}   {psdextra.def}{2024-01-20 v7.01h}
+  *{package}{colorprofiles}{2018/11/01 v1.0.1}
+  *{file}   {colorprofiles.tex}{0000/00/00 v0.0}
+  *{file}   {se-pdfdoc.def}{2019/11/29 v1.12}
+  *{file}   {AdobeColorProfiles.tex}{0000/00/00 v0.0}
+  *{file}   {8bit.def}    {2008/03/30 v1.1d}
+  *{file}   {8bit.def}    {2008/03/30 v1.1d}
+  *{package}{ifthen}      {2022/04/13 v1.1d}
+  *{package}{xmpincl}     {2021/09/22 v2.4}
+  *{file}   {8bit.def}    {2008/03/30 v1.1d}
+  *{package}{accsupp}     {2019/12/05 v0.6}
+  *{file}   {accsupp-pdftex.def}{2019/12/05 v0.6}
+  *{package}{geometry}    {2020/01/02 v5.9}
+  *{package}{ifvtex}      {2019/10/25 v1.7}
+  *{package}{fontawesome5}{2022/05/02 v5.15.4}
+  *{package}{expl3}       {2024-02-20 v3}
+  *{file}   {l3backend-pdftex.def}{2024-02-20 v3}
+  *{package}{l3keys2e}    {2024-02-18 v2e}
+  *{package}{xparse}      {2024-02-18 v3}
+  *{package}{fontawesome5-generic-helper}{2022/05/02 v5.15.4}
+  *{file}   {fontawesome5-mapping.def}{0000/00/00 v0.0}
+  *{package}{scrlfile}    {2023/07/07 v3.41}
+  *{package}{scrlfile-hook}{2023/07/07 v3.41}
+  *{package}{scrlogo}     {2023/07/07 v3.41}
+  *{package}{cmap}        {2021/02/06 v1.0j}
+  *{package}{inputenc}    {2021/02/14 v1.3d}
+  *{package}{fontenc}     {0000/00/00 v0.0}
+  *{file}   {glyphtounicode.tex}{0000/00/00 v0.0}
+  *{package}{ragged2e}    {2023/06/22 v3.6}
+  *{package}{tikz}        {2023-01-15 v3.1.10}
+  *{package}{pgf}         {2023-01-15 v3.1.10}
+  *{package}{pgfrcs}      {2023-01-15 v3.1.10}
+  *{file}   {pgfrcs.code.tex}{0000/00/00 v0.0}
+  *{package}{pgfcore}     {2023-01-15 v3.1.10}
+  *{package}{graphicx}    {2021/09/16 v1.2d}
+  *{package}{graphics}    {2022/03/10 v1.4e}
+  *{package}{trig}        {2021/08/11 v1.11}
+  *{file}   {graphics.cfg}{2016/06/04 v1.11}
+  *{package}{pgfsys}      {2023-01-15 v3.1.10}
+  *{file}   {pgfsys.code.tex}{0000/00/00 v0.0}
+  *{file}   {pgfsyssoftpath.code.tex}{2023-01-15 v3.1.10}
+  *{file}   {pgfsysprotocol.code.tex}{2023-01-15 v3.1.10}
+  *{file}   {pgfcore.code.tex}{0000/00/00 v0.0}
+  *{package}{pgfcomp-version-0-65}{2023-01-15 v3.1.10}
+  *{package}{pgfcomp-version-1-18}{2023-01-15 v3.1.10}
+  *{package}{pgffor}      {2023-01-15 v3.1.10}
+  *{package}{pgfkeys}     {0000/00/00 v0.0}
+  *{file}   {pgfkeys.code.tex}{0000/00/00 v0.0}
+  *{package}{pgfmath}     {0000/00/00 v0.0}
+  *{file}   {pgfmath.code.tex}{0000/00/00 v0.0}
+  *{file}   {pgffor.code.tex}{0000/00/00 v0.0}
+  *{file}   {tikz.code.tex}{0000/00/00 v0.0}
+  *{package}{tcolorbox}   {2024/01/10 v6.2.0}
+  *{package}{verbatim}    {2023-11-06 v1.5v}
+  *{package}{environ}     {2014/05/04 v0.3}
+  *{package}{trimspaces}  {2009/09/17 v1.1}
+  *{package}{tikzfill.image}{2023/08/08 v1.0.1}
+  *{package}{tikzfill-common}{2023/08/08 v1.0.1}
+  *{package}{enumitem}    {2019/06/20 v3.9}
+  *{package}{trimclip}    {2020/08/19 v1.2}
+  *{package}{collectbox}  {2022/10/17 v0.4c}
+  *{package}{adjcalc}     {2012/05/16 v1.1}
+  *{package}{xkeyval}     {2022/06/16 v2.9}
+  *{file}   {xkeyval.tex} {2014/12/03 v2.7a}
+  *{file}   {tc-pdftex.def}{2019/01/04 v2.2}
+  *{package}{dashrule}    {2013/03/28 v1.3}
+  *{package}{ifmtarg}     {2018/04/16 v1.2b}
+  *{package}{multirow}    {2021/03/15 v2.8}
+  *{package}{tabularx}    {2023/07/08 v2.11c}
+  *{package}{array}       {2023/10/16 v2.5g}
+  *{package}{changepage}  {2009/10/20 v1.0c}
+  *{package}{afterpage}   {2023/07/04 v1.08}
+  *{package}{paracol}     {2018/12/31 v1.35}
+  *{package}{fancybox}    {2010/05/15 v1.4}
+  *{package}{roboto}      {2022/09/10 v0.0}
+  *{package}{textcomp}    {2020/02/02 v2.0n}
+  *{package}{fontenc}     {0000/00/00 v0.0}
+  *{package}{fontaxes}    {2020/07/21 v1.0e}
+  *{package}{lato}        {2019/06/20 v0.0}
+  *{file}   {pubs-authoryear.cfg}{0000/00/00 v0.0}
+  *{package}{biblatex}    {2023/03/05 v3.19}
+  *{package}{logreq}      {2010/08/04 v1.0}
+  *{file}   {logreq.def}  {2010/08/04 v1.0}
+  *{file}   {blx-dm.def}  {2023/03/05 v3.19}
+  *{file}   {apa6.dbx}    {2020/08/28 v8.5}
+  *{file}   {blx-compat.def}{2023/03/05 v3.19}
+  *{file}   {biblatex.def}{2023/03/05 v3.19}
+  *{file}   {standard.bbx}{2023/03/05 v3.19}
+  *{file}   {apa6.bbx}    {2020/08/28 v8.5}
+  *{file}   {apa6.cbx}    {2020/08/28 v8.5}
+  *{file}   {biblatex.cfg}{0000/00/00 v0.0}
+  *{package}{blx-case-expl3}{2023/03/05 v3.19}
+  *{file}   {T1lato-TLF.fd}{2019/06/24 v1/lato-TLF.}
+  *{file}   {T1RobotoSlab-TLF.fd}{2019/12/11 v1/RobotoSlab-TLF.}
+  *{file}   {ufontawesomefree0.fd}{0000/00/00 v0.0}
+  *{file}   {ufontawesomefree2.fd}{0000/00/00 v0.0}
+  *{file}   {ufontawesomefree1.fd}{0000/00/00 v0.0}
+  *{file}   {ufontawesomebrands1.fd}{0000/00/00 v0.0}
+  *{file}   {ufontawesomebrands0.fd}{0000/00/00 v0.0}
+  *{file}   {TS1lato-TLF.fd}{2019/06/24 v1/lato-TLF.}
+  *{-------}{Document-specific files:}{----}
+  *{file}   {supp-pdf.mkii}{0000/00/00 v0.0}
+  *{package}{epstopdf-base}{2020-01-24 v2.11}
+  *{file}   {epstopdf-sys.cfg}{2010/07/13 v1.3}
+  *{file}   {resume-en.out}{0000/00/00 v0.0}
+  *{file}   {resume-en.out}{0000/00/00 v0.0}
+  *{file}   {english.lbx} {2023/03/05 v3.19}
+  *{file}   {american.lbx}{2023/03/05 v3.19}
+  *{file}   {american-apa6.lbx}{2020/08/28 v8.5}
+  *{file}   {english-apa6.lbx}{2020/08/28 v8.5}
+  *{file}   {face.jpeg}   {Graphic v0.0}
+}
