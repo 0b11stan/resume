@@ -1,6 +1,6 @@
 \RequirePackage{snapshot}
 \documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
-\geometry{left=1.25cm,right=1.25cm,top=1.25cm,bottom=1.25cm,columnsep=1.2cm}
+\geometry{left=1.25cm,right=1.25cm,top=1cm,bottom=1cm,columnsep=1.2cm}
 \usepackage{paracol}
 \usepackage{fancybox}
 \usepackage[rm]{roboto}
@@ -48,8 +48,8 @@
 \addbibresource{sample.bib}
 
 \begin{document}
-\name{Tristan Pinaudeau}
-\tagline{Offensive Security Consultant}
+\name{Tristan Auvinet Pinaudeau}
+\tagline{Cybersecurity Engineer}
 %% You can add multiple photos on the left or right
 \photoR{2.8cm}{face}
 % \photoL{2.5cm}{Yacht_High,Suitcase_High}
@@ -59,6 +59,7 @@
   \email{tristan@tic.sh}
   \phone{+33 6 81 67 53 37}
   \mailaddress{164 rue d'Ornano, 33000 Bordeaux, France}
+  \\
   \homepage{blog.tic.sh}
   \twitter{@0b11stan}
   \linkedin{tristan-pinaudeau}
@@ -98,17 +99,20 @@
 
 \cvevent{Cybersecurity Consultant}{Capgemini}{October 2021 -- December 2024}{Bordeaux (Merignac)}
 \begin{itemize}
-  \item Red and Purple Team
-  \item ...
-  \item External and internal pentest
+  \item Long lasting Red and Purple Teaming (banking and aerospace)
+  \item External and Internal pentests (public, banking and care sector)
+  \item Full build of a complex air-gapped network (aerospace sector)
+  \item Automation of OT network maintenance (aerospace sector)
+  \item Teaching of OS (kernel) security for Master's students
   \item WAF solution audit for CSPN certification (ANSSI)
+  \item Semi-pro CTF player
 \end{itemize}
 
 \divider
 
-\cvevent{SRE Engineer}{Cdiscount}{Sept. 2018 -- Sept. 2021}{Bordeaux (Baccalan)}
+\cvevent{Site Reliability Engineer}{Cdiscount}{Sept. 2018 -- Sept. 2021}{Bordeaux (Baccalan)}
 \begin{itemize}
-  \item Integration of a highly available vault
+  \item Integration of a highly available Hashicorp Vault
   \item Integration of a resilient observability platform
   \item Maintenance of messaging and infrastructure platforms
 \end{itemize}
@@ -128,57 +132,62 @@
   \item Converting a legacy application (Access) to ASP .NET
 \end{itemize}
 
-\cvsection{Activities}
+\medskip
+
+\cvsection{Other Activities}
 
   \cvevent{}{Hackathons / CTFs}{}{}
+  Numerous CTFs and Hackathons either as a hobby or as part of the official \href{https://www.capgemini.com/fr-fr/perspectives/publications/les-aces-of-spades-lequipe-de-capture-the-flag-de-capgemini/}{\bf{Aces of Spades}} team.
+
+  \divider
+
+  \cvevent{}{Conferences and blog posts}{}{}
   \begin{itemize}
-    \item THC CTF (57/374) -- 2021: binaire, crypto, web, android (\href{https://blog.tic.sh/2021/06/29/thc-writeup-mission-impossible-fr.html}{\color{PastelRed}writeup})
-    \item Google Code Jam (Qualif + Round1) -- 2021: maths, algo
-    \item Sunshine CTF (72/750) -- 2020: binaire, web
-    \item Square CTF (127/610) -- 2020: binaire, crypto, web
-    \item StartupWeekendBdx (2/40) -- 2019: gestion, marketing, finance
-    \item Sthack Conf \& CTF -- 2019: binaire, IA, web, network
-    \item HackBordeaux (1\textsuperscript{er} au défi Ekino) -- 2019: Android, BLE
-    \item HackBordeaux (1\textsuperscript{er} au défi Lectra) -- 2018: Graphql, React
+    \item Occasional blog posts on \href{https://blog.tic.sh}{\bf{https://blog.tic.sh/}}
+    \item \href{https://youtu.be/GpJdcgxwxVE?t=23867}{\bf{Conference on NixOS}} at the Hack'It'N 2022 convention.
   \end{itemize}
 
-  \cvevent{}{Projets}{}{}
+  \divider
+
+  \cvevent{}{Development}{}{}
   \begin{itemize}
-    \item Martine (WIP): Site de partage de photos
-      \begin{itemize}
-        \item[>] Python (Flask) -- Go -- VueJs -- Docker -- Ansible
-      \end{itemize}
-    \item AKO (2019): Application innovante de partage de compétences.
-      \begin{itemize}
-        \item[>] Python -- Graphql -- Hasura -- React
-      \end{itemize}
-    \item Heimdal (2018): Développement d'un service HIDS déporté.
-      \begin{itemize}
-        \item[>] Python -- Bash -- Docker
-      \end{itemize}
+    \item Minor open-source contributions \\
+      (\href{https://github.com/milesmcc/shynet/pull/236}{\bf{shynet}}, \href{https://github.com/NixOS/nixpkgs/pull/259785}{\bf{nixpkgs}}, molecule \href{https://github.com/ansible-community/molecule-podman/pull/83}{\bf{PR\#83}} and \href{https://github.com/ansible-community/molecule-podman/pull/79}{\bf{PR\#79}})
+    \item Tool development for personal usage.
   \end{itemize}
+
+
+
+%  \begin{itemize}
+%    \item Numerous CTFs and Hackathons either as a hobby or as part of the official \href{https://www.capgemini.com/fr-fr/perspectives/publications/les-aces-of-spades-lequipe-de-capture-the-flag-de-capgemini/}{\bf{Aces of Spades}} team.
+%    \item Occasional blog posts and conferences about cybersecurity.
+%    \item Some spare time tinkering with NixOS and other exciting techs.
+%    \item Minor open-source contributions (\href{https://github.com/milesmcc/shynet/pull/236}{\bf{shynet}}, \href{https://github.com/NixOS/nixpkgs/pull/259785}{\bf{nixpkgs}}, molecule-podman \href{https://github.com/ansible-community/molecule-podman/pull/83}{\bf{PR\#83}} and \href{https://github.com/ansible-community/molecule-podman/pull/79}{\bf{PR\#79}})
+%    \item Tool development for personal usage.
+%  \end{itemize}
 
 \medskip
 
-%% Switch to the right column. This will now automatically move to the second
-%% page if the content is too long.
 \switchcolumn
 
 \cvsection{Strengths}
 
   \cvtag{GNU/Linux}
+  \cvtag{Containerization}
   \cvtag{Python}
-  \cvtag{Docker / Podman}
-  \cvtag{Ansible}
-  \cvtag{Qemu/KVM}
-  \cvtag{RedHat}
-  \cvtag{Pentest}
 
-  \divider\smallskip
+  \smallskip
+
+  \cvtag{Pentest}
+  \cvtag{Qemu/KVM}
+  \cvtag{Ansible}
+  \cvtag{RedHat}
+
+  \smallskip
 
   \cvtag{Enthusiastic}
-  \cvtag{Educational}
   \cvtag{Curious}
+  \cvtag{Love to share}
 
 \cvsection{Languages}
 
@@ -188,32 +197,23 @@
   \cvskill{English (TOEIC 960/990)}{4}
   \divider
 
-  \cvskill{German}{2}
+  \cvskill{German}{1}
   \divider
-
-%% Yeah I didn't spend too much time making all the
-%% spacing consistent... sorry. Use \smallskip, \medskip,
-%% \bigskip, \vspace etc to make adjustments.
-\medskip
 
 \cvsection{Formations}
 
-  \cvevent{Specialized Master in Computer Security}{ENSEEIHT}{Sept. 2020 -- Sept. 2021}{}
-  Une formation de haut niveau très technique, résultat d'une collaboration entre
-  l'INSA, l'ENAC et l'ENSEEIHT. (c.f. \href{https://tls-sec.github.io/documents/Syllabus_Ms_securite_Informatique_V1.pdf}{syllabus})
+  \cvevent{Specialized Master in Cybersecurity}{ENSEEIHT Toulouse}{Sept. 2020 -- Sept. 2021}{}
+  An highly technical course on low-level computer hacking, the result of collaboration between INSA, ENAC and ENSEEIHT. (c.f. \href{https://tls-sec.github.io/documents/Syllabus_Ms_securite_Informatique_V1.pdf}{\bf{syllabus}}).
 
   \divider
 
-  \cvevent{Titre RNCP de niveau 1}{EPSI Bordeaux}{Sept 2018 -- Sept 2020}{}
-  Obtenu à la fin d'un cycle d'ingénierie en informatique généraliste (spécialité
-  cybersécurité) réalisé en alternance à Cdiscount.
+  \cvevent{Level 1 RNCP qualification}{EPSI Bordeaux}{Sept 2018 -- Sept 2020}{}
+  Obtained upon the completion of a master's degree in general computer science (cybersecurity speciality) under a sandwich course at Cdiscount.
 
   \divider
 
-  \cvevent{Titre RNCP de niveau 2}{EPSI Bordeaux}{Sept 2017 -- Sept 2018}{}
-  Obtenu à la fin d'un cycle bachelor en informatique généraliste réalisé en
-  alternance.
-  (Major de Promotion)
+  \cvevent{Level 2 RNCP qualification}{EPSI Bordeaux}{Sept 2017 -- Sept 2018}{}
+  Obtained upon the completion of a bachelor's degree in general computer science under a sandwich course at HelloAsso (Valedictorian).
 
   \divider
 
